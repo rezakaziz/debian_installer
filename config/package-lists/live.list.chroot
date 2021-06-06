@@ -1,0 +1,32 @@
+live-boot
+live-config
+live-config-systemd
+
+#desktop 
+task-lxde-desktop
+
+#acces distant
+remmina
+
+#video
+vlc
+
+#office
+libreoffice
+
+#navigateur
+midori
+
+#chimie
+gelemental
+
+#geographie
+marble
+
+#dictionnaire
+gnome-dictionary
+
+#geo gebra
+geogebra
+
+

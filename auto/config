@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+--mode "debian" \
+--architectures "amd64" \
+--distribution "buster" \
+--apt-indices "false" \
+--archive-areas "main contrib non-free" \
+--bootappend-live "locales=fr_FR.UTF-8 keyboard-layouts=fr" \
+--bootappend-install "locales=fr_FR.UTF-8" \
+--security "true" \
+--updates "true" \
+--binary-images "iso-hybrid" \
+--apt-recommends "false" \
+--debian-installer "live" \
+--debian-installer-gui "true" \
+--win32-loader "false" \
+--cache "true" \
+--clean \
+--debug \
+--verbose \
+--source "false" \
+	"${@}"
